@@ -1,7 +1,5 @@
 package org.patterns.creational;
 
-import java.sql.SQLOutput;
-
 class User{
 
     private  final String name;
@@ -73,7 +71,8 @@ class User{
 }
 public class BuilderDesignPattern {
     public static void main(String[] args) {
-        User user =  User.UserBuilder.userBuilder().setId(1).setEmail("gau@gmail.com").setName("gaurav").build();
+        User user = User.UserBuilder.userBuilder().setId(1).setEmail("gaurav@gamil.com").setName("Gaurav Kumar").build();
+//        User user =  User.UserBuilder.userBuilder().setId(1).setEmail("gau@gmail.com").setName("gaurav").build();
         System.out.println(user);
     }
 }

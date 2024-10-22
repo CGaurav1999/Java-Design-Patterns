@@ -22,7 +22,7 @@ class Samosa implements Serializable,Cloneable {
     //synchronized can be used on method level or for a block
     public static Samosa getSamosa(){
         if(samosa == null) {
-            synchronized (Samosa.class) {
+            synchronized(Samosa.class) {
                 if (samosa == null) {
                     samosa = new Samosa();
                 }
@@ -49,7 +49,6 @@ class Jalebi{
     public static Jalebi getJalebi(){
         return jalebi;
     }
-
 }
 public class SingletonDesignPattern {
     public static void main(String[] args) throws Exception {
